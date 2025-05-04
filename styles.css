@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: changeBackground 7s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.hello {
+  color: rgb(221, 221, 221);
+  text-shadow: 1px 2px 0 rgb(155, 155, 155);
+  display: flex; /* Membuat huruf tampil berdampingan */
+  gap: 10px; /* Memberikan jarak antar huruf */
+  font-size: 5vw;
+}
+
+.h,
+.e,
+.l,
+.l2,
+.o,
+.w,
+.o2,
+.r,
+.l3,
+.d,
+.sign {
+  position: relative;
+  animation: bounceText 1.4s ease-in-out infinite;
+}
+
+.h::before,
+.e::before,
+.l::before,
+.l2::before,
+.o::before,
+.w::before,
+.o2::before,
+.r::before,
+.l3::before,
+.d::before,
+.sign::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-radius: 100%;
+  opacity: 0.1;
+  height: 7px;
+  filter: blur(1px);
+
+  position: absolute;
+  background-color: black;
+  bottom: -2%;
+  left: 0;
+  animation: bounceTextShadow 1.4s ease-in-out infinite;
+}
+
+/* Keyframes untuk animasi bounce */
+@keyframes bounceText {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px); 
+    text-shadow: 1px 3px 0 rgb(155, 155, 155);
+    color: #ffffff;
+  }
+  50% {
+    text-shadow: 1px 3px 0 rgb(155, 155, 155);
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+@keyframes bounceTextShadow {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(20px) scale(0.7); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+@keyframes changeBackground {
+  0% {
+    background-color: #1e3a8a; /* Navy blue */
+  }
+  25% {
+    background-color: #6b21a8; /* Deep purple */
+  }
+  50% {
+    background-color: #b91c1c; /* Dark red */
+  }
+  75% {
+    background-color: #2563eb; /* Strong blue */
+  }
+  100% {
+    background-color: #1e3a8a; /* Back to navy */
+  }
+}
+
+/* Optional: Memberikan delay untuk setiap huruf supaya animasi bergantian */
+.h {
+  animation-delay: 0s;
+}
+
+.e {
+  animation-delay: 0.1s;
+}
+
+.l {
+  animation-delay: 0.2s;
+}
+
+.l2 {
+  animation-delay: 0.3s; /* Memberikan delay tambahan untuk l kedua */
+}
+
+.o {
+  animation-delay: 0.4s;
+}
+
+.w {
+  animation-delay: 0.5s;
+}
+
+.o2 {
+  animation-delay: 0.6s;
+}
+
+.r {
+  animation-delay: 0.7s;
+}
+
+.l3 {
+  animation-delay: 0.8s;
+}
+
+.d {
+  animation-delay: 0.9s;
+}
+
+.sign {
+  animation-delay: 1s;
+}
+
+.h::before {
+  animation-delay: 0s;
+}
+
+.e::before {
+  animation-delay: 0.1s;
+}
+
+.l::before {
+  animation-delay: 0.2s;
+}
+
+.l2::before {
+  animation-delay: 0.3s;
+}
+
+.o::before {
+  animation-delay: 0.4s;
+}
+
+.w::before {
+  animation-delay: 0.5s;
+}
+
+.o2::before {
+  animation-delay: 0.6s;
+}
+
+.r::before {
+  animation-delay: 0.7s;
+}
+
+.l3::before {
+  animation-delay: 0.8s;
+}
+
+.d::before {
+  animation-delay: 0.9s;
+}
+
+.sign::before {
+  animation-delay: 1s;
+}
