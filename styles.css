@@ -17,7 +17,7 @@ body {
 
 .hello {
   color: rgb(221, 221, 221);
-  text-shadow: 1px 2px 0 rgb(155, 155, 155);
+  text-shadow: 1px 1px 0 rgb(155, 155, 155);
   display: flex; /* Membuat huruf tampil berdampingan */
   gap: 10px; /* Memberikan jarak antar huruf */
   font-size: 5vw;
@@ -70,15 +70,16 @@ body {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-20px); 
-    text-shadow: 1px 3px 0 rgb(155, 155, 155);
-    color: #ffffff;
+    transform: translateY(-20px);
+    text-shadow: 1px 2px 0 rgb(155, 155, 155);
+    color: yellow;
   }
   50% {
-    text-shadow: 1px 3px 0 rgb(155, 155, 155);
+    text-shadow: 1px 2px 0 rgb(155, 155, 155);
   }
   100% {
-    transform: translateY(0); 
+    transform: translateY(0);
+    text-shadow: 1px 1px 0 rgb(155, 155, 155);
   }
 }
 
@@ -87,10 +88,10 @@ body {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(20px) scale(0.7); 
+    transform: translateY(20px) scale(0.7);
   }
   100% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
 }
 @keyframes changeBackground {
